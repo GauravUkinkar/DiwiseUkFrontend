@@ -1,0 +1,22 @@
+.privacy > * {
+  padding: 5px 0px;
+}
+
+.privacy {
+  max-width: var(--wl);
+  margin: 100px auto 10px auto;
+}
+.privacy h1 {
+  font-size: 28px !important;
+  font-weight: 800;
+}
+.privacy h2 {
+  font-size: 24px !important;
+}
+.privacy p {
+  font-size: 16px !important;
+}
+.privacy .cookies_ul {
+  line-height: 25px;
+  padding: 0px 23px;
+}/*# sourceMappingURL=terms_conditions.css.map */

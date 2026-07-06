@@ -1,0 +1,8 @@
+.disclaimer > * {
+  padding: 5px 0px;
+}
+
+.disclaimer {
+  max-width: calc(var(--wl) - 40px);
+  margin: 60px auto 0px auto;
+}/*# sourceMappingURL=diclaimer.css.map */

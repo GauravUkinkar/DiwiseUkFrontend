@@ -1,0 +1,13 @@
+.loader_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow-y: hidden;
+}
+.loader_container img {
+  width: 200px;
+  height: 200px;
+}/*# sourceMappingURL=loading.css.map */

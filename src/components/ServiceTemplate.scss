@@ -1,0 +1,434 @@
+.servicetemplate {
+  width: 100%;
+  min-height: 100vh !important;
+  .template-container {
+    margin: auto;
+    height: 100%;
+    max-width: var(--sl);
+    padding: 0px 0px 0px 0px;
+
+    section.opening {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0px 20px;
+      overflow: hidden;
+      .left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        h1.service-heading {
+          font-size: 30px;
+          text-align: left !important;
+        }
+        p.service-content {
+          font-size: 18px;
+          line-height: 150%;
+          text-align: justify;
+        }
+      }
+      .right {
+        background: rgba(255, 0, 0, 0.067);
+        background: url("https://img.freepik.com/free-photo/online-marketing-branding-concept-laptop-screen_53876-94880.jpg?w=740&t=st=1699045454~exp=1699046054~hmac=0c803d061c52d2424c0e71ddaca8059d3d78fba17c99e18e428f159220b08413");
+        height: 80%;
+        background-size: cover !important;
+        background-position: bottom center !important;
+        width: 40%;
+        border-radius: 20px;
+        overflow: hidden;
+
+        
+
+        .bg {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          height: 100%;
+          width: 100%;
+          background-size: cover !important;
+          background-position: bottom center !important;
+          background-repeat: no-repeat !important;
+          filter: drop-shadow(15px 10px 3px rgba(0, 0, 0, 0.187));
+          z-index: -10;
+          animation: loop 5s linear infinite;
+
+          &.bg1{
+            background: url("../img//services/s1-full.webp");
+          }
+          &.bg2{
+            background: url("../img//services/s2-full.webp");
+          }
+          &.bg3{
+            background: url("../img//services/s3-full.webp");
+          }
+          &.bg4{
+            background: url("../img//services/s4-full.webp");
+          }
+          &.bg5{
+            background: url("../img//services/s5-full.webp");
+          }
+          &.bg6{
+            background: url("../img//services/s6-full.webp");
+          }
+          &.bg7{
+            background: url("../img//services/s7-full.webp");
+          }
+          &.bg8{
+            background: url("../img//services/s8-full.webp");
+          }
+
+
+
+        @keyframes loop {
+          0% {
+            transform: scale(1);
+            filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.187));
+          }
+          50% {
+            transform: scale(1.1);
+            filter: drop-shadow(15px 10px 3px rgba(0, 0, 0, 0.187));
+          }
+          100% {
+            transform: scale(1);
+            filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.187));
+          }
+        }
+        }
+        &.s1 {
+          background: rgb(228, 228, 228);
+        }
+        &.s2 {
+          background: rgb(248, 236, 220);
+        }
+        &.s3 {
+          background: #fff8f2;
+        }
+        &.s4 {
+          background: rgb(228, 228, 228);
+        }
+        &.s5 {
+          background: rgb(228, 228, 228);
+        }
+        &.s6 {
+          background: #f8f1d4;
+        }
+        &.s7 {
+          background: rgb(228, 228, 228);
+        }
+        &.s8 {
+          background: rgb(228, 228, 228);
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .template-container {
+      padding: 90px 0px 20px 0px;
+
+      section.opening {
+        flex-direction: column-reverse;
+        padding: 10px 20px;
+        height: fit-content;
+        .left {
+          width: 100%;
+          height: 100%;
+          h1.service-heading {
+            font-size: 26px;
+            text-align: center !important;
+            width: 100%;
+          }
+          p.service-content {
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+          }
+        }
+        .right {
+          width: 100%;
+          min-height: 300px;
+
+          .bg{
+            background-size: contain !important;
+            background-position: bottom center !important;
+            background-repeat: no-repeat !important;
+          }
+
+          .bg1 {
+            background: url("../img//services/s1-mob.webp");
+          }
+          .bg2 {
+            background: url("../img//services/s2-mob.webp");
+          }
+          .bg3 {
+            background: url("../img//services/s3-mob.webp");
+          }
+          .bg4 {
+            background: url("../img//services/s4-mob.webp");
+          }
+          .bg5 {
+            background: url("../img//services/s5-mob.webp");
+          }
+          .bg6 {
+            background: url("../img//services/s6-mob.webp");
+          }
+          .bg7 {
+            background: url("../img//services/s7-mob.webp");
+          }
+          .bg8 {
+            background: url("../img//services/s8-mob.webp");
+          }
+
+          
+          
+        }
+      }
+    }
+  }
+  // section 1 - responsiveness
+
+  @media only screen and (max-width: 1200px) {
+    section.points {
+      padding: 20px !important;
+    }
+
+    .points-container {
+      width: 100% !important;
+    }
+    .tutorial-content {
+      width: calc(100% - 60px) !important;
+    }
+    section.opening {
+      display: flex;
+      .left {
+        width: 55%;
+        h1.service-heading {
+          font-size: 26px;
+          text-align: left;
+        }
+        p.service-content {
+          font-size: 16px;
+          line-height: 140%;
+          text-align: justify;
+        }
+      }
+      .right {
+        width: 45%;
+      }
+    }
+    .step-title {
+      display: none;
+    }
+    .tabbed-steps {
+      width: fit-content !important;
+    }
+    .points {
+      padding: 90px 0px !important;
+    }
+    .points-container {
+      gap: 10px !important;
+    }
+  }
+  // ---------------------------------- section 2
+
+  section.points {
+    height: fit-content;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.046);
+    padding: 90px 20px;
+
+    .points-container {
+      max-width: var(--sl);
+      height: 100%;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      align-items: stretch;
+      justify-content: center;
+
+      .tabbed-steps {
+        width: 30%;
+        background: rgb(255, 243, 231);
+        border-radius: 10px;
+        padding: 5px;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 5px;
+        .tab {
+          cursor: pointer;
+          padding: 15px;
+          width: 100%;
+          transition: var(--med);
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-between;
+
+          span.arrow {
+            display: none;
+            animation: look 1s linear infinite;
+            font-size: 20px;
+
+            @keyframes look {
+              0% {
+                transform: translateX(0px);
+              }
+              50% {
+                transform: translateX(-10px);
+              }
+              100% {
+                transform: translateX(0px);
+              }
+            }
+          }
+
+          &:hover {
+            background: var(--accent);
+            color: var(--white);
+            transform: scale(1.01);
+          }
+          &.active {
+            background: var(--accent);
+            color: var(--white);
+            span.arrow {
+              display: block;
+            }
+          }
+
+          .step-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .step-img {
+              height: 25px;
+              svg {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+
+      .tutorial-content {
+        width: 70%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(255, 243, 231);
+        border-radius: 10px;
+        padding: 5px;
+        gap: 20px;
+        flex-direction: column;
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          width: 80%;
+        }
+        img {
+          height: 50px;
+        }
+      }
+    }
+  }
+  // section 2 - responsiveness
+
+  // section what do we do starts here.......
+
+  section.dowedo {
+    height: auto;
+    width: 100%;
+    padding: 90px 0px;
+    .dowedo-container {
+      margin: auto;
+      max-width: var(--sl);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h2 {
+        text-align: center;
+        color: var(--accent);
+      }
+      p {
+        text-align: center;
+        padding: 20px 0px;
+        width: 70%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    section.dowedo {
+      height: auto;
+      width: 100%;
+      padding: 30px 0px;
+      .dowedo-container {
+        margin: auto;
+        max-width: var(--sl);
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+          text-align: center;
+          font-size: 24px;
+        }
+        p {
+          text-align: center;
+          padding: 20px 0px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  section.faq {
+    min-height: 50vh;
+    background: rgba(0, 0, 0, 0.046);
+    padding: 30px 20px;
+    overflow: hidden;
+
+    .faq-container {
+      margin: auto;
+      max-width: var(--sl);
+      padding: 20px;
+      h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    section.faq {
+      padding: 30px 0px;
+      .faq-container {
+        margin: auto;
+        max-width: var(--sl);
+        padding: 20px 10px;
+        h2 {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 30px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

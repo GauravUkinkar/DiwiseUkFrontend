@@ -1,0 +1,8 @@
+.contact {
+  width: 100%;
+  height: 100vh;
+}
+.contact .contact-container {
+  max-height: var(--sl);
+  height: 100vh;
+}/*# sourceMappingURL=services.css.map */

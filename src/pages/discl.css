@@ -1,0 +1,18 @@
+.disclaimer > * {
+  padding: 5px 0px;
+}
+
+.disclaimer {
+  max-width: var(--wl);
+  margin: 100px auto 10px auto;
+}
+.disclaimer h1 {
+  font-size: 28px !important;
+  font-weight: 800;
+}
+.disclaimer h2 {
+  font-size: 24px !important;
+}
+.disclaimer p {
+  font-size: 16px !important;
+}/*# sourceMappingURL=discl.css.map */

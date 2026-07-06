@@ -1,0 +1,23 @@
+.cookies > * {
+  padding: 5px 5px;
+}
+
+.cookies {
+  overflow: hidden;
+  max-width: var(--wl);
+  margin: 100px auto 10px auto;
+}
+.cookies h1 {
+  font-size: 28px !important;
+  font-weight: 800;
+}
+.cookies h2 {
+  font-size: 24px !important;
+}
+.cookies p {
+  font-size: 16px !important;
+}
+.cookies .cookies_ul {
+  line-height: 25px;
+  padding: 0px 23px;
+}/*# sourceMappingURL=cookies.css.map */

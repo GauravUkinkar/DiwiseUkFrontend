@@ -1,0 +1,20 @@
+.disclaimer>* {
+    padding: 5px 0px;
+}
+.disclaimer 
+
+{
+    max-width: var(--wl);
+    // max-width: calc(var(--wl) - 40px);
+    margin: 100px auto 10px auto;
+    h1{
+        font-size: 28px!important;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 24px!important;
+    }
+    p{
+        font-size: 16px!important;
+    }
+}

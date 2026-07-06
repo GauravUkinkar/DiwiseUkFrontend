@@ -1,0 +1,226 @@
+.navbar {
+    height: 60px;
+    width: 100vw;
+    top: 20px;
+    // background: var(--accent);
+    position: fixed;
+    z-index: 1000;
+    transition: var(--med);
+    // margin-left: -10px;
+
+    &.scrolled {
+        background: rgba(0, 0, 0, 0.361);
+        backdrop-filter: blur(10px);
+        top: 0px;
+        height: 50px;
+
+        .navbar-container .logo {
+            background: url('../img/logowhite.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+
+        .navbar-container .menu span {
+            background: var(--white);
+        }
+    }
+
+    .navbar-container {
+        max-width: var(--sl);
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px;
+
+        .logo {
+            height: 100%;
+            width: 100px;
+            background: url('../img/logoblack.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            cursor: pointer;
+            transition: var(--med);
+
+            &.navlogo {
+                background: url('../img/logowhite.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+
+            }
+
+        }
+
+        .menu {
+            height: 40px;
+            width: 40px;
+            position: relative;
+            transition: var(--slow);
+       
+            span {
+                position: absolute;
+                height: 3px;
+                width: 35px;
+                background: var(--black);
+                transition: var(--slow);
+                transform: translateY(-50%);
+
+                &:nth-child(1) {
+                    top: 30%;
+
+                }
+
+                &:nth-child(2) {
+                    top: 50%;
+                    width: 25px;
+
+                }
+
+                &:nth-child(3) {
+                    top: 70%;
+
+                }
+
+            }
+
+            &:hover {
+                transform: rotate(0deg) scale(1.05);
+                span{
+                    &:nth-child(1) ,&:nth-child(3) {
+                        width: 35px;
+                    }
+                    &:nth-child(2)  {
+                        width: 35px;
+                    }
+                }
+            }
+
+            &.closeicon {
+                transform: rotate(180deg);
+
+
+                span {
+                    background: var(--white);
+
+                    &:nth-child(1) {
+                        top: 50%;
+                        transform: translateY(-50%) rotate(45deg);
+
+                    }
+
+                    &:nth-child(2) {
+                        top: 50%;
+                        width: 35px;
+                        transform: translateY(-50%) rotate(-45deg);
+
+                    }
+
+                    &:nth-child(3) {
+                        top: 50%;
+                        transform: translateY(-50%) rotate(45deg);
+
+                    }
+                }
+
+                &:hover {
+                    transform: rotate(180deg) scale(1.05);
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+.sidenav {
+    position: fixed;
+    height: 100vw;
+    width: 100vw;
+    background:rgb(0, 0, 0);
+    overflow: hidden;
+    z-index: 500;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    .links {
+        list-style-type: none;
+        transition: var(--med);
+
+    
+        &:hover {
+            li {
+                padding: 5px 0px 5px 0px;
+
+                a {
+                    opacity: 0.2;
+                   
+                }
+            }
+        }
+
+        li {
+            transition: var(--med);
+            padding: 5px 0px;
+            // padding: 5px 0px;
+           
+
+            a {
+                transition: var(--med);
+                text-decoration: none;
+                color: var(--white);
+                font-size: 50px;
+                font-weight: 700;
+                span{
+                    color: red;
+                    font-size: 100px;
+                    background: red;
+                }
+            
+
+                &:hover {
+
+                    color: var(--white);
+                    opacity: 1;
+                    
+                    
+                }
+            }
+
+
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1600px) {
+    
+    
+}
+@media only screen and (max-width: 1300px) {
+    
+}
+@media only screen and (max-width: 950px) {
+    
+}
+@media only screen and (max-width: 720px) {
+    .links li {
+        padding: 10px 0px !important;
+        a{
+            font-size: 30px !important;
+        }
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    
+}

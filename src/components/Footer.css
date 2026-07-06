@@ -1,0 +1,129 @@
+.footer-parent {
+  padding: 10px 0px 30px 0px;
+  background: var(--black);
+}
+.footer-parent .footer-container {
+  max-width: var(--wl);
+  margin: auto;
+  height: 100%;
+  padding: 10px 20px 0px 20px;
+}
+.footer-parent .footer-container .footer-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.footer-parent .footer-container .footer-top .col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-parent .footer-container .footer-top .col .title {
+  color: var(--white);
+  padding-bottom: 10px;
+}
+.footer-parent .footer-container .footer-top .col a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.268);
+  transition: var(--fast);
+}
+.footer-parent .footer-container .footer-top .col a:hover {
+  color: var(--accent);
+}
+.footer-parent .footer-container .footer-top .col1 .logo {
+  margin-bottom: 10px;
+}
+.footer-parent .footer-container .footer-top .col1 .logo img {
+  height: 35px;
+}
+.footer-parent .footer-container .footer-top .col1 a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-parent .footer-container .footer-top .col1 a span {
+  font-size: 20px;
+}
+.footer-parent .footer-container .footer-top .col1 a:nth-child(3) span {
+  font-size: 27px;
+}
+.footer-parent .footer-container .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.129);
+  padding: 10px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+}
+.footer-parent .footer-container .footer-bottom .social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-parent .footer-container .footer-bottom .social a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.268);
+  transition: var(--fast);
+}
+.footer-parent .footer-container .footer-bottom .social a:nth-child(1) {
+  font-size: 20px;
+}
+.footer-parent .footer-container .footer-bottom .social a:nth-child(2) {
+  font-size: 19px;
+}
+.footer-parent .footer-container .footer-bottom .social a:nth-child(3) {
+  font-size: 24px;
+}
+.footer-parent .footer-container .footer-bottom .social a:nth-child(4) {
+  font-size: 22px;
+}
+.footer-parent .footer-container .footer-bottom .social a:hover {
+  color: var(--accent);
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-container .footer-top {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer-container .footer-top .col {
+    width: 45%;
+  }
+  .footer-container .footer-bottom {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer-container .footer-top {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer-container .footer-top .col {
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.129);
+    padding: 20px 0px;
+  }
+  .footer-container .footer-top .col:nth-child(1) {
+    border-top: none !important;
+  }
+  .footer-container .footer-top .col:last-child {
+    border-bottom: none !important;
+  }
+  .footer-container .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+}/*# sourceMappingURL=Footer.css.map */

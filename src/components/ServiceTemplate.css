@@ -1,0 +1,401 @@
+.servicetemplate {
+  width: 100%;
+  min-height: 100vh !important;
+}
+.servicetemplate .template-container {
+  margin: auto;
+  height: 100%;
+  max-width: var(--sl);
+  padding: 0px 0px 0px 0px;
+}
+.servicetemplate .template-container section.opening {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0px 20px;
+  overflow: hidden;
+}
+.servicetemplate .template-container section.opening .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.servicetemplate .template-container section.opening .left h1.service-heading {
+  font-size: 30px;
+  text-align: left !important;
+}
+.servicetemplate .template-container section.opening .left p.service-content {
+  font-size: 18px;
+  line-height: 150%;
+  text-align: justify;
+}
+.servicetemplate .template-container section.opening .right {
+  background: rgba(255, 0, 0, 0.067);
+  background: url("https://img.freepik.com/free-photo/online-marketing-branding-concept-laptop-screen_53876-94880.jpg?w=740&t=st=1699045454~exp=1699046054~hmac=0c803d061c52d2424c0e71ddaca8059d3d78fba17c99e18e428f159220b08413");
+  height: 80%;
+  background-size: cover !important;
+  background-position: bottom center !important;
+  width: 40%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.servicetemplate .template-container section.opening .right .bg {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-size: cover !important;
+  background-position: bottom center !important;
+  background-repeat: no-repeat !important;
+  filter: drop-shadow(15px 10px 3px rgba(0, 0, 0, 0.187));
+  z-index: -10;
+  animation: loop 5s linear infinite;
+}
+.servicetemplate .template-container section.opening .right .bg.bg1 {
+  background: url("../img//services/s1-full.webp");
+}
+.servicetemplate .template-container section.opening .right .bg.bg2 {
+  background: url("../img//services/s2-full.webp");
+}
+.servicetemplate .template-container section.opening .right .bg.bg3 {
+  background: url("../img//services/s3-full.webp");
+}
+.servicetemplate .template-container section.opening .right .bg.bg4 {
+  background: url("../img//services/s4-full.webp");
+}
+.servicetemplate .template-container section.opening .right .bg.bg5 {
+  background: url("../img//services/s5-full.webp");
+}
+.servicetemplate .template-container section.opening .right .bg.bg6 {
+  background: url("../img//services/s6-full.webp");
+}
+.servicetemplate .template-container section.opening .right .bg.bg7 {
+  background: url("../img//services/s7-full.webp");
+}
+.servicetemplate .template-container section.opening .right .bg.bg8 {
+  background: url("../img//services/s8-full.webp");
+}
+@keyframes loop {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.187));
+  }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(15px 10px 3px rgba(0, 0, 0, 0.187));
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.187));
+  }
+}
+.servicetemplate .template-container section.opening .right.s1 {
+  background: rgb(228, 228, 228);
+}
+.servicetemplate .template-container section.opening .right.s2 {
+  background: rgb(248, 236, 220);
+}
+.servicetemplate .template-container section.opening .right.s3 {
+  background: #fff8f2;
+}
+.servicetemplate .template-container section.opening .right.s4 {
+  background: rgb(228, 228, 228);
+}
+.servicetemplate .template-container section.opening .right.s5 {
+  background: rgb(228, 228, 228);
+}
+.servicetemplate .template-container section.opening .right.s6 {
+  background: #f8f1d4;
+}
+.servicetemplate .template-container section.opening .right.s7 {
+  background: rgb(228, 228, 228);
+}
+.servicetemplate .template-container section.opening .right.s8 {
+  background: rgb(228, 228, 228);
+}
+@media only screen and (max-width: 850px) {
+  .servicetemplate .template-container {
+    padding: 90px 0px 20px 0px;
+  }
+  .servicetemplate .template-container section.opening {
+    flex-direction: column-reverse;
+    padding: 10px 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .servicetemplate .template-container section.opening .left {
+    width: 100%;
+    height: 100%;
+  }
+  .servicetemplate .template-container section.opening .left h1.service-heading {
+    font-size: 26px;
+    text-align: center !important;
+    width: 100%;
+  }
+  .servicetemplate .template-container section.opening .left p.service-content {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+  }
+  .servicetemplate .template-container section.opening .right {
+    width: 100%;
+    min-height: 300px;
+  }
+  .servicetemplate .template-container section.opening .right .bg {
+    background-size: contain !important;
+    background-position: bottom center !important;
+    background-repeat: no-repeat !important;
+  }
+  .servicetemplate .template-container section.opening .right .bg1 {
+    background: url("../img//services/s1-mob.webp");
+  }
+  .servicetemplate .template-container section.opening .right .bg2 {
+    background: url("../img//services/s2-mob.webp");
+  }
+  .servicetemplate .template-container section.opening .right .bg3 {
+    background: url("../img//services/s3-mob.webp");
+  }
+  .servicetemplate .template-container section.opening .right .bg4 {
+    background: url("../img//services/s4-mob.webp");
+  }
+  .servicetemplate .template-container section.opening .right .bg5 {
+    background: url("../img//services/s5-mob.webp");
+  }
+  .servicetemplate .template-container section.opening .right .bg6 {
+    background: url("../img//services/s6-mob.webp");
+  }
+  .servicetemplate .template-container section.opening .right .bg7 {
+    background: url("../img//services/s7-mob.webp");
+  }
+  .servicetemplate .template-container section.opening .right .bg8 {
+    background: url("../img//services/s8-mob.webp");
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .servicetemplate section.points {
+    padding: 20px !important;
+  }
+  .servicetemplate .points-container {
+    width: 100% !important;
+  }
+  .servicetemplate .tutorial-content {
+    width: calc(100% - 60px) !important;
+  }
+  .servicetemplate section.opening {
+    display: flex;
+  }
+  .servicetemplate section.opening .left {
+    width: 55%;
+  }
+  .servicetemplate section.opening .left h1.service-heading {
+    font-size: 26px;
+    text-align: left;
+  }
+  .servicetemplate section.opening .left p.service-content {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: justify;
+  }
+  .servicetemplate section.opening .right {
+    width: 45%;
+  }
+  .servicetemplate .step-title {
+    display: none;
+  }
+  .servicetemplate .tabbed-steps {
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .servicetemplate .points {
+    padding: 90px 0px !important;
+  }
+  .servicetemplate .points-container {
+    gap: 10px !important;
+  }
+}
+.servicetemplate section.points {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.046);
+  padding: 90px 20px;
+}
+.servicetemplate section.points .points-container {
+  max-width: var(--sl);
+  height: 100%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: center;
+}
+.servicetemplate section.points .points-container .tabbed-steps {
+  width: 30%;
+  background: rgb(255, 243, 231);
+  border-radius: 10px;
+  padding: 5px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 5px;
+}
+.servicetemplate section.points .points-container .tabbed-steps .tab {
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  transition: var(--med);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.servicetemplate section.points .points-container .tabbed-steps .tab span.arrow {
+  display: none;
+  animation: look 1s linear infinite;
+  font-size: 20px;
+}
+@keyframes look {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.servicetemplate section.points .points-container .tabbed-steps .tab:hover {
+  background: var(--accent);
+  color: var(--white);
+  transform: scale(1.01);
+}
+.servicetemplate section.points .points-container .tabbed-steps .tab.active {
+  background: var(--accent);
+  color: var(--white);
+}
+.servicetemplate section.points .points-container .tabbed-steps .tab.active span.arrow {
+  display: block;
+}
+.servicetemplate section.points .points-container .tabbed-steps .tab .step-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.servicetemplate section.points .points-container .tabbed-steps .tab .step-content .step-img {
+  height: 25px;
+}
+.servicetemplate section.points .points-container .tabbed-steps .tab .step-content .step-img svg {
+  color: red;
+}
+.servicetemplate section.points .points-container .tutorial-content {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 243, 231);
+  border-radius: 10px;
+  padding: 5px;
+  gap: 20px;
+  flex-direction: column;
+}
+.servicetemplate section.points .points-container .tutorial-content h2 {
+  text-align: center;
+}
+.servicetemplate section.points .points-container .tutorial-content p {
+  text-align: center;
+  width: 80%;
+}
+.servicetemplate section.points .points-container .tutorial-content img {
+  height: 50px;
+}
+.servicetemplate section.dowedo {
+  height: auto;
+  width: 100%;
+  padding: 90px 0px;
+}
+.servicetemplate section.dowedo .dowedo-container {
+  margin: auto;
+  max-width: var(--sl);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.servicetemplate section.dowedo .dowedo-container h2 {
+  text-align: center;
+  color: var(--accent);
+}
+.servicetemplate section.dowedo .dowedo-container p {
+  text-align: center;
+  padding: 20px 0px;
+  width: 70%;
+}
+@media only screen and (max-width: 850px) {
+  .servicetemplate section.dowedo {
+    height: auto;
+    width: 100%;
+    padding: 30px 0px;
+  }
+  .servicetemplate section.dowedo .dowedo-container {
+    margin: auto;
+    max-width: var(--sl);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .servicetemplate section.dowedo .dowedo-container h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .servicetemplate section.dowedo .dowedo-container p {
+    text-align: center;
+    padding: 20px 0px;
+    width: 100%;
+  }
+}
+.servicetemplate section.faq {
+  min-height: 50vh;
+  background: rgba(0, 0, 0, 0.046);
+  padding: 30px 20px;
+  overflow: hidden;
+}
+.servicetemplate section.faq .faq-container {
+  margin: auto;
+  max-width: var(--sl);
+  padding: 20px;
+}
+.servicetemplate section.faq .faq-container h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 850px) {
+  .servicetemplate section.faq {
+    padding: 30px 0px;
+  }
+  .servicetemplate section.faq .faq-container {
+    margin: auto;
+    max-width: var(--sl);
+    padding: 20px 10px;
+  }
+  .servicetemplate section.faq .faq-container h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=ServiceTemplate.css.map */

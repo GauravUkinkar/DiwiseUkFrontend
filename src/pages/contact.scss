@@ -1,0 +1,212 @@
+.contact {
+  
+  .contact-container {
+    max-width: var(--sl);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    
+
+
+    .contact-box {
+
+      --margin: 20px;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr) !important;
+      grid-template-rows: repeat(9, 1fr) !important;
+      grid-column-gap: var(--margin) !important;
+      grid-row-gap: var(--margin) !important;
+      height: 70%;
+      width: 1000px;
+      aspect-ratio: 5/2.7;
+
+      .box {
+        background: rgba(0, 0, 0, 0.042);
+        border-radius: 10px;
+      }
+      .box4,
+      .box5,
+      .box6,
+      .box7 {
+        display: grid;
+        text-decoration: none;
+        place-items: center;
+        color:black ;
+        font-size: 25px;
+        transition: var(--med2);
+        &:hover {
+          background: var(--accent);
+          color: var(--white);
+        }
+      }
+
+      .box1 {
+        grid-area: 1 / 5 / 10 / 9;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        form {
+          height: 100%;
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(6, 1fr);
+          grid-column-gap: 20px;
+          grid-row-gap: 20px;
+
+          #fname {
+            grid-area: 1 / 1 / 2 / 2;
+          }
+          #lname {
+            grid-area: 1 / 2 / 2 / 3;
+          }
+          #mail {
+            grid-area: 2 / 1 / 3 / 3;
+          }
+          #phone {
+            grid-area: 3 / 1 / 4 / 3;
+          }
+          #mssg {
+            grid-area: 4 / 1 / 6 / 3;
+          }
+          #subbtn {
+            grid-area: 6 / 1 / 7 / 3;
+            width: 100% !important;
+          }
+
+          input:not(.btn),
+          textarea {
+            padding: 10px 20px;
+            width: 100%;
+            background: transparent;
+            border: 2px solid rgba(136, 134, 134, 0.725);
+            border-radius: 5px;
+            font-size: 18px !important;
+            &:focus {
+              border: 2px solid var(--accent);
+              outline: none;
+            }
+          }
+          .btn {
+            width: fit-content;
+          }
+        }
+      }
+      .box2 {
+        grid-area: 1 / 1 / 3 / 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box3 {
+        grid-area: 3 / 1 / 8 / 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        padding: 20px;
+
+        .contact-details {
+          width: 100%;
+          padding: 10px 20px;
+          // border: 2px solid rgba(136, 134, 134, 0.725);
+          // border-radius: 5px;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          position: relative;
+          cursor: pointer;
+          gap: 10px;
+          transition: var(--med);
+          border-radius: 10px;
+
+          &:hover {
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.147);
+          }
+
+
+          
+          .contact-icons {
+            color: var(--accent);
+            font-size: 30px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          p {
+            text-decoration: none !important;
+          }
+        }
+      }
+
+      .box4 {
+        grid-area: 8 / 1 / 10 / 2;
+      }
+      .box5 {
+        grid-area: 8 / 2 / 10 / 3;
+      }
+      .box6 {
+        grid-area: 8 / 3 / 10 / 4;
+      }
+      .box7 {
+        grid-area: 8 / 4 / 10 / 5;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact {
+      height: fit-content;
+    .contact-container {
+      height: fit-content;
+      padding-top: 100px;
+      width: 100%;
+      .contact-box {
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(16, 1fr) !important;
+        width: 500px;
+        aspect-ratio:1/4 !important;
+        height: 1000px;
+
+        .box1 {
+          grid-area: 2 / 1 / 9 / 5;
+        }
+        .box2 {
+          grid-area: 1 / 1 / 2 / 5;
+        }
+        .box3 {
+          grid-area: 9 / 1 / 14 / 5;
+        }
+        .box4 {
+          grid-area: 14 / 1 / 16 / 2;
+        }
+        .box5 {
+          grid-area: 14 / 2 / 16 / 3;
+        }
+        .box6 {
+          grid-area: 14 / 3 / 16 / 4;
+        }
+        .box7 {
+          grid-area: 14 / 4 / 16 / 5;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .contact-box {
+    width: 90% !important;
+  }
+}
